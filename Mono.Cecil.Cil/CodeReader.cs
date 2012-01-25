@@ -37,9 +37,9 @@ using RVA = System.UInt32;
 
 namespace Mono.Cecil.Cil {
 
-	sealed class CodeReader : ByteBuffer {
+	public sealed class CodeReader : ByteBuffer {
 
-		readonly internal MetadataReader reader;
+		readonly public MetadataReader reader;
 
 		int start;
 		Section code_section;

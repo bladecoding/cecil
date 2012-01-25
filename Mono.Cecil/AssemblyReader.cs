@@ -358,9 +358,9 @@ namespace Mono.Cecil {
 		}
 	}
 
-	sealed class MetadataReader : ByteBuffer {
+	public sealed class MetadataReader : ByteBuffer {
 
-		readonly internal Image image;
+		readonly public Image image;
 		readonly internal ModuleDefinition module;
 		readonly internal MetadataSystem metadata;
 

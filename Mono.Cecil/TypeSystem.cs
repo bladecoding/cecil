@@ -41,7 +41,7 @@ namespace Mono.Cecil {
 			{
 			}
 
-			internal override TypeReference LookupType (string @namespace, string name)
+			public override TypeReference LookupType(string @namespace, string name)
 			{
 				var metadata = module.MetadataSystem;
 				if (metadata.Types == null)
@@ -78,7 +78,7 @@ namespace Mono.Cecil {
 			{
 			}
 
-			internal override TypeReference LookupType (string @namespace, string name)
+			public override TypeReference LookupType(string @namespace, string name)
 			{
 				return CreateTypeReference (@namespace, name);
 			}
@@ -164,7 +164,7 @@ namespace Mono.Cecil {
 			return new CommonTypeSystem (module);
 		}
 
-		internal abstract TypeReference LookupType (string @namespace, string name);
+		public abstract TypeReference LookupType(string @namespace, string name);
 
 		TypeReference LookupSystemType (string name, ElementType element_type)
 		{

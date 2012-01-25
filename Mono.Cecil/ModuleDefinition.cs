@@ -816,7 +816,7 @@ namespace Mono.Cecil {
 			return Read (token, (t, reader) => reader.LookupToken (t));
 		}
 
-		internal TRet Read<TItem, TRet> (TItem item, Func<TItem, MetadataReader, TRet> read)
+		public TRet Read<TItem, TRet>(TItem item, Func<TItem, MetadataReader, TRet> read)
 		{
 			var position = reader.position;
 			var context = reader.context;

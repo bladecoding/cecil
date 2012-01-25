@@ -54,7 +54,8 @@ namespace Mono.Cecil {
 			set { token = value; }
 		}
 
-		internal bool HasImage {
+		public bool HasImage
+		{
 			get {
 				var module = Module;
 				if (module == null)

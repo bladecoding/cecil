@@ -32,9 +32,9 @@ namespace Mono.Cecil.PE {
 
 	public class ByteBuffer {
 
-		internal byte [] buffer;
-		internal int length;
-		internal int position;
+		public byte[] buffer;
+		public int length;
+		public int position;
 
 		public ByteBuffer ()
 		{

@@ -440,7 +440,8 @@ namespace Mono.Cecil {
 		}
 	}
 
-	static partial class Mixin {
+	public static partial class Mixin
+	{
 
 		public static ParameterDefinition GetParameter (this MethodBody self, int index)
 		{
